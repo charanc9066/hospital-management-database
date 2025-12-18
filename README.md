@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Hospital Management Database (Demo Project)
 
 **Tech Stack:** MySQL (SQL), Relational Design, Triggers, Python automation scripts
@@ -29,3 +30,7 @@ and low-stock alerts. It's ready to run locally for testing and to include as a 
 - The automation scripts simulate sending reminders/alerts by printing messages.
 - This is an educational demo — do not use in production without proper security/hardening.
 
+=======
+# hospital-management-database
+Hospital Management Database using MySQL
+>>>>>>> 4c10e75d20552e82f46ea1e03e82efa650055f99
