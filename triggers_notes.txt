@@ -1,0 +1,18 @@
+Triggers included in schema.sql:
+
+1) tr_admission_insert
+   - After inserting an admission, increments the occupied_beds count for the assigned room.
+
+2) tr_admission_update
+   - After updating an admission from 'Admitted' to 'Discharged', decrements the occupied_beds value.
+
+3) tr_inventory_update
+   - After inventory updates, if quantity falls below reorder_level, inserts a notification row.
+
+4) tr_appointment_insert
+   - After inserting an appointment that occurs within the next 24 hours, inserts a notification (demo).
+
+Notes:
+- Notifications table is a lightweight demo to capture automated events. In production, you'd forward these to
+  a notification service, message queue, or email/sms gateway.
+- Triggers are MySQL-style. For PostgreSQL, use PL/pgSQL syntax and CREATE FUNCTION + CREATE TRIGGER.
